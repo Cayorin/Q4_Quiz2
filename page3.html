@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ICT9S 2QProject - Photo Gallery</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+.container {
+ 	 width: 80%;
+  	margin: 0 auto;
+}
+
+body {
+	background-image:url(https://www.myglobalviewpoint.com/wp-content/uploads/2023/09/Most-Beautiful-Places-in-Luzon.jpg);
+	background-attachment:fixed;
+}
+
+.section2 {
+	margin:3px;
+	border:4px solid black;
+	background-color:lightblue;
+	color:white;
+}
+.container2 {  
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "blank text blank2";
+}
+
+.blank { 
+	grid-area: blank; 
+}
+
+.blank2 { 
+	grid-area: blank2; 
+}
+
+.text { 	
+	margin:3px;
+	font-size: 15px;
+	font-family: Roboto, Arial, sans-serif;
+	color:white;
+	border:4px solid black;
+	margin:5px;	
+	padding:5px;
+	display:inline-block;
+	text-align:center;
+	justify-content: center;
+	height: 300px;
+  width: 550px;
+	background: rgb(23,23,159);
+	background: linear-gradient(90deg, rgba(23,23,159,0.6498248957786239) 0%, rgba(249,255,12,0.6666316184676996) 47%, rgba(255,0,0,0.7198529069831057) 100%);
+}
+
+.title {
+	font-size: 35px;
+	font-family: Roboto, Arial, sans-serif;
+	text-align:center;
+	text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+	color:white;
+}
+
+.sorhd {
+	color:yellow;
+	font-family: 'Noto Sans Tagalog', sans-serif;
+}
+
+.bghd {
+	color:red;
+	font-family: 'Noto Sans Tagalog', sans-serif;
+}
+
+.font1 {	
+	font-family: 'Diphylleia', serif;
+	text-align:center;
+	justify-content:center;
+	color:white;
+}
+
+.destination {
+			margin-top:5px;
+			margin-bottom: 10px;
+			text-align:center;
+			background: #00c1ff;
+			margin-bottom: 10px;
+			background: linear-gradient(114deg,#00c1ff 0%, #ffffff 40%, #00c1ff 80%);
+			background: -webkit-linear-gradient(114deg,#00c1ff 0%, #ffffff 40%, #00c1ff 80%);
+			background: -moz-linear-gradient(114deg,#00c1ff 0%, #ffffff 40%, #00c1ff 80%);
+}
+
+.desc {
+			border: 5px solid #0096c7; 
+			height:300px;
+			width:525px;
+			text-align:center;
+			justify-content: center;
+			margin:auto;
+			background-color:#0096c7; 
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "place3 place2-desc place1"
+    "place3-desc place2 place1-desc";
+}
+
+.place2-desc { 
+			grid-area: place2-desc; 
+}
+
+.place2 { 
+			grid-area: place2;
+		}
+
+.place3 { 
+			grid-area: place3; 
+}
+
+.place3-desc { 
+			grid-area: place3-desc; 
+		}
+
+.place1 { 
+			grid-area: place1; 
+		}
+
+.place1-desc { 
+			grid-area: place1-desc; 
+		}
+
+</style>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		<img src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/documents/class-2440/folder-10214/1709695312-234.png" width="75" height="75">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item">
+				<a class="nav-link active" href="mainpage.html">Home</a>
+			</li>
+			  <li class="nav-item">
+				<a class="nav-link" href="page2.html">First Quarter</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="page3.html">Second Quarter</a>
+			  </li>
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Enter a keyword" aria-label="Search">
+			  <button class="btn btn-info text-white" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+<h3 class="title">Three of the Many places to stay in Philippines, Luzon</h3>
+	<hr>
+	<section>
+		<div class="container2">
+			<div class="blank"> <!--I just placed the blanks that so the box would end up in the middle--></div>
+			<div class="blank2"> </div>
+			<div class="text">
+			  	<p>
+			  		<b>
+						Philippines, island country of Southeast Asia in the western Pacific Ocean. It is an archipelago consisting of more than 7,000 islands and islets lying about 500 miles (800 km) off the coast of Vietnam. It consist of 3 regions, Luzon, Mindanao, and Visayas and the one that will be covered is Luzon.
+					</b>
+				</p>
+
+				<p>
+					<b>
+						Luzon is a popular tourist destination due to its rich culture and heritage. From the historic walking areas of Banaue and Vigan to the religious sites of Manila and Baguio, there is something for everyone to explore.
+					</b>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="section1">
+
+		<div class="container">
+
+		  	<div class="place3">
+		  		<div class="destination">
+					<img src="https://4.bp.blogspot.com/-GDVnl526Cf8/U7vQ_wcjypI/AAAAAAAAGxY/7nejVm0C_zY/s1600/vigan+city+big+backdrop+2012.jpg" height="300" width="300">
+				</div>
+			</div>
+
+	  		<div class="place3-desc">
+	  			<div class="desc">
+	  				<h2 style="color:blue;	font-family: 'Noto Sans Tagalog', sans-serif;"><!--I put style here because it would ignore my tag in CSS-->
+						Vigan
+					</h2>
+						<p class="font1">
+							One of the oldest towns in the Philippines, Vigan is a Spanish Colonial fairy tale of dark-wood mansions, cobblestone streets and clattering kalesa (horse-drawn carriages). In fact, it is the finest surviving example of a Spanish Colonial town in Asia and a Unesco World Heritage site.
+						</p>
+				</div>	  		
+	  		</div>
+	  
+	  		<div class="place2">
+	  			<div class="destination">
+					<img src="https://travelosyo.com/wp-content/uploads/2016/07/sorsogon.png" height="300" width="300">
+				</div>
+			</div>
+
+			<div class="place2-desc">
+				<div class="desc">
+					<h2 class="sorhd">
+						Sorsogon
+					</h2>
+						<p class="font1">
+							Sorsogon is Luzon's southernmost province, filled with nature-based adventures. It is famous for being the country's Butanding or whale shark capital where tourists can freely swim and interact with the ocean's gentle giants. The province's name was derived from the word Sogsogon which means tracing the river upstream.
+						</p>
+				</div>
+			</div>
+
+			<div class="place1">
+				<div class="destination">
+					<img src="https://miro.medium.com/v2/resize:fit:1000/1*acl_kd5JJbgpWg4iRTHgtQ.png" height="300" width="300">
+				</div>
+			</div>
+
+			<div class="place1-desc">
+				<div class="desc">
+					<h2 class="bghd">
+					Baguio
+					</h2>
+					<p class="font1">
+						Located in the Northen side of Luzon near Subic. It is the only place in the Philippines that's usually cold compared to the other places in the Philippines. It's on a mountain so it's a tall climb.
+					</p>
+				</div>
+			</div>	
+	</div>
+	</section>
+
+	<section class="section2">	
+		<h2>REFERENCES</h2>
+		<ol>
+			<!--1st reference--><li>
+				<a href="https://4.bp.blogspot.com/-GDVnl526Cf8/U7vQ_wcjypI/AAAAAAAAGxY/7nejVm0C_zY/s1600/vigan+city+big+backdrop+2012.jpg">Reference for Vigan</a>'
+			</li>
+
+			<!--2nd reference--><li>
+				<a href="https://www.lonelyplanet.com/philippines/north-luzon/vigan">Reference for Vigan Description</a>
+			</li>
+
+			<!--3rd reference--><li>
+				<a href="https://travelosyo.com/wp-content/uploads/2016/07/sorsogon.png">Reference for Sorsogon</a>
+			</li>
+
+			<!--4th reference--><li>
+				<a href="https://7641islands.ph/explore/ultimate-guide-to-sorsogon/#:~:text=Sorsogon%20is%20Luzon%27s%20southernmost%20province,means%20tracing%20the%20river%20upstream.">Reference for Sorsogon Description</a>
+			</li>
+
+			<!--5th reference--><li>
+				<a href="https://miro.medium.com/v2/resize:fit:1000/1*acl_kd5JJbgpWg4iRTHgtQ.png">Reference for Baguio</a>
+			</li>
+
+			<!--6th reference--><li>
+				<a href="https://elretirobaguio.com/baguio-travel-guide/#:~:text=Baguio%2C%20a%20city%20blessed%20with,-round%20must-visit%20destination.">Reference for Baguio Description</a>
+			</li>
+		</ol>
+	</section>
+</div>
+</body>
+</html>
